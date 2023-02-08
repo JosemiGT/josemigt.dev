@@ -1,5 +1,6 @@
-import { generateRibbonHTMLfromJSON } from "../blog/Infraestructure/generateRibbonHTMLfromJSON";
+import { generateRibbonHTMLfromJSON } from "./blog/Infraestructure/generateRibbonHTMLfromJSON";
+import "./main.css";
 
 window.onload = function () {
-    generateRibbonHTMLfromJSON("./assets/ribbon.json", "esp");
+    generateRibbonHTMLfromJSON("./posts/ribbon.json", "esp");
 };
