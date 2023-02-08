@@ -9,41 +9,37 @@ export const blog = {
 
     slug: location => new URL(location).pathname.split('/')[1],
 
-    init: async function(options = {}){
-
+    init: async function (options = {}) {
         const {
             nav = 'nav',
             close = 'button',
             article = 'article',
-            feed = '/posts/index.json',
-        } = options
+            feed = '/posts/index.json'
+        } = options;
 
-        this.nav = document.querySelector(nav)
-        this.close = document.querySelector(close)
-        this.article = document.querySelector(article)
+        this.nav = document.querySelector(nav);
+        this.close = document.querySelector(close);
+        this.article = document.querySelector(article);
 
-        const response = await fetch(feed)
-        const json = await response.json()
-        this.posts = json.items
-
+        const response = await fetch(feed);
+        const json = await response.json();
+        this.posts = json.items;
     }
-
-}
+};
 
 window.onload = function () {
-    alert("Hola mundo!")
-}
+    alert('Hola mundo!');
+};
 
-function createCard(articleTittle, articleSummary){
-    let card = document.createElement('div');
-    card.className = "card";
+function createCard (articleTittle, articleSummary) {
+    const card = document.createElement('div');
+    card.className = 'card';
 
-    let title = document.createElement('h3');
+    const title = document.createElement('h3');
     title.innerText = articleTittle;
 
-    let summary = document.createElement('p');
+    const summary = document.createElement('p');
     summary.innerText = articleSummary;
-
 }
 
 // TODO: Establecer fichero donde se reflejará la página de los post, el título, fecha y sus tags. (¿En json?)
