@@ -1,0 +1,36 @@
+{
+    "posts" : [
+        {
+            "id" : 1,
+            "postState" : {
+                "version": "0.1",
+                "state": "Draft",
+                "publicationDate": "",
+                "modificationDate": ""
+            },
+            "postContent" : {
+                "title" : "Artículo de prueba 1",
+                "description" : "Descripción de prueba",
+                "body" : "./test.md"
+            },
+            "labels" : "Inicio",
+            "postParentId" : 0
+        },
+        {
+            "id" : 1,
+            "postState" : {
+                "version": "0.1",
+                "state": "Draft",
+                "publicationDate": "",
+                "modificationDate": ""
+            },
+            "postContent" : {
+                "title" : "Artículo de prueba 1",
+                "description" : "Descripción de prueba",
+                "body" : "./test.md"
+            },
+            "labels" : "Inicio",
+            "postParentId" : 0
+        }
+    ]    
+}

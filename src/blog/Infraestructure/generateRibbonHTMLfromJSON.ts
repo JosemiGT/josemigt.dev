@@ -1,6 +1,6 @@
 import { readJSONData } from "./readJSONData";
 
-export async function generateRibbonHTMLfromJSON (ribbonPath, language) {
+export async function generateRibbonHTMLfromJSON (ribbonPath:string, language:string) {
     const ribbonValues = await readJSONData(ribbonPath);
     const select = document.createElement("select");
 
