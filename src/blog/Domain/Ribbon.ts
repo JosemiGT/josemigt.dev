@@ -1,10 +1,10 @@
 export class Ribbon {
 
-    public id: number;
+    public language: string;
     public labels: string[]
 
-    constructor (id: number, labels: string[]) {
-        this.id = id;
+    constructor (language: string, labels: string[]) {
+        this.language = language;
         this.labels = labels;
     }
 }
