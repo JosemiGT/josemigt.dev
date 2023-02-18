@@ -14,7 +14,7 @@ module.exports = {
             template: "./src/index.html"
         }),
         new CopyPlugin({
-            patterns: [{ from: "./src/posts", to: "posts" }]
+            patterns: [{ from: "./src/data", to: "data" }]
         })
     ],
     resolve: {
