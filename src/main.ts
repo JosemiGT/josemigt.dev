@@ -1,7 +1,13 @@
-import { generateRibbonHTMLfromJSON } from "./blog/Infraestructure/generateRibbonHTMLfromJSON";
+import { BlogBuilder } from "./blog/Infraestructure/BlogBuilder";
+import PostsMarkdawnRepository from "./blog/Infraestructure/PostsMarkdawnRepository";
+import RibbonJsonRepository from "./blog/Infraestructure/RibbonJsonRepository";
 import "./main.css";
 
 window.onload = function () {
-    
-    generateRibbonHTMLfromJSON("./posts/ribbon.json", "esp");
+
+    const blogBuilder = new BlogBuilder(
+        "esp", 
+        [""], 
+        new RibbonJsonRepository("./posts/ribbon.json"),
+        new PostsMarkdawnRepository(""))
 };
